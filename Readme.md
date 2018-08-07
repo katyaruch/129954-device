@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Katya Ruch](https://up.htmlacademy.ru/htmlcss/22/user/129954).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Шашева](https://htmlacademy.ru/profile/loyso).
 
 ---
 
