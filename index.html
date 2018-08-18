@@ -8,8 +8,11 @@
     <header class="main-header">
       <a class="main-header-logo">Device</a>
       <nav class="main-navigation">
-        <input type="text" name="search" placeholder="Поиск по сайту"/>
-        <a class="login-link" href="#">Войти</a>
+        <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input class="search" id="search" type="text" name="search" placeholder="Поиск по сайту"/>
+        </form>
+        <a class="login-link" href="login.html">Войти</a>
         <a href="#">Сравнить</a>
         <a href="#">Корзина</a>
         <ul class="site-navigation">
@@ -36,8 +39,8 @@
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="promo-list">
           <li class="promo-item">
-            <h3>Делай селфи, как Бен Стиллер!</h3>
-            <p>
+            <h3 class="promo-item-title">Делай селфи, как Бен Стиллер!</h3>
+            <p class="promo-item-image">
               <img src="img/product-promo-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
             </p>
             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -58,8 +61,8 @@
             </table>
           </li>
           <li class="promo-item">
-            <h3>Худеем правильно!</h3>
-            <p>
+            <h3 class="promo-item-title">Худеем правильно!</h3>
+            <p class="promo-item-image">
               <img src="img/product-promo-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
             </p>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -72,8 +75,8 @@
             </table>
           </li>
           <li class="promo-item">
-            <h3>Порхает как бабочка, жалит как пчела!</h3>
-            <p>
+            <h3 class="promo-item-title">Порхает как бабочка, жалит как пчела!</h3>
+            <p class="promo-item-image">
               <img src="img/product-promo-3.png" width="526" height="334" alt="Квадрокоптер">
             </p>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -91,9 +94,9 @@
           </li>
         </ul>
         <p>
-          <span class="active">1</span>
-          <span>2</span>
-          <span>3</span>
+          <button class="active">1</button>
+          <button>2</button>
+          <button>3</button>
         </p>
       </section>
       <section class="category">
@@ -109,22 +112,22 @@
       </section>
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
-        <ul>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Кредит</a></li>
+        <ul class="services-nuv">
+          <li><button class="button">Доставка</button></li>
+          <li><button class="button">Гарантия</button></li>
+          <li><button class="button">Кредит</button></li>
         </ul>
-        <ul>
-          <li>
-            <h3>Доставка</h3>
+        <ul class="services-list">
+          <li class="services-item">
+            <h3 class="services-title">Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <li>
-            <h3>Гарантия</h3>
+          <li class="services-item">
+            <h3 class="services-title">Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </li>
-          <li>
-            <h3>Кредит</h3>
+          <li class="services-item">
+            <h3 class="services-title">Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </li>
         </ul>
@@ -152,7 +155,7 @@
       <section class="contact">
         <h2 class="title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <p><img src="img/map.jpg" width="560" height="222" alt="Карта"></p>
+        <a href="img/map.jpg"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a><br>
         <a class="button" href="#">Напишите нам</a>
       </section>
     </main>
@@ -169,9 +172,9 @@
       </ul>
       <a class="footer-contacts"  href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       <ul class="footer-social">
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-        <li><a class="social-button" href="#">Твиттер</a></li>
+        <li><a class="social-button" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+        <li><a class="social-button" href="#" aria-label="Инстаграм">Инстаграм</a></li>
+        <li><a class="social-button" href="#" aria-label="Твиттер">Твиттер</a></li>
       </ul>
       <p class="footer-copyright">
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
@@ -179,8 +182,22 @@
     </footer>
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <span class="modal-close">x</span>
-        <!-- Здесь будет форма -->
+      <button class="modal-close button">Закрыть</button>
+      <form class="write" method="post" action="https://echo.htmlacademy.ru">
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="e-mail">Ваше e-mail:</label>
+          <input id="e-mail" type="text" name="e-mail" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="text">Текст письма:</label>
+          <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
