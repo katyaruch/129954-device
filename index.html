@@ -11,6 +11,7 @@
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="search">Поиск по сайту</label>
           <input class="search" id="search" type="text" name="search" placeholder="Поиск по сайту"/>
+          <button class="search-button">Найти</button>
         </form>
         <a class="login-link" href="login.html">Войти</a>
         <a href="#">Сравнить</a>
@@ -93,10 +94,10 @@
             </table>
           </li>
         </ul>
-        <p>
-          <button class="active">1</button>
-          <button>2</button>
-          <button>3</button>
+        <p class="promo-nav">
+          <a>1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
         </p>
       </section>
       <section class="category">
@@ -112,10 +113,10 @@
       </section>
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
-        <ul class="services-nuv">
-          <li><button class="button">Доставка</button></li>
-          <li><button class="button">Гарантия</button></li>
-          <li><button class="button">Кредит</button></li>
+        <ul class="services-nav">
+          <li><a class="button">Доставка</a></li>
+          <li><a class="button" href="#">Гарантия</a></li>
+          <li><a class="button" href="#">Кредит</a></li>
         </ul>
         <ul class="services-list">
           <li class="services-item">
@@ -155,7 +156,7 @@
       <section class="contact">
         <h2 class="title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="img/map.jpg"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a><br>
+        <a href="img/map.jpg"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
         <a class="button" href="#">Напишите нам</a>
       </section>
     </main>
@@ -189,7 +190,7 @@
           <input id="name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p>
-          <label for="e-mail">Ваше e-mail:</label>
+          <label for="e-mail">Ваш e-mail:</label>
           <input id="e-mail" type="text" name="e-mail" placeholder="email@example.com">
         </p>
         <p>
@@ -201,7 +202,7 @@
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
-      <span class="modal-close">x</span>
+      <button class="modal-close button">Закрыть</button>
         <!-- Здесь будет форма -->
     </section>
   </body>

@@ -11,6 +11,7 @@
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="search">Поиск по сайту</label>
           <input class="search" id="search" type="text" name="search" placeholder="Поиск по сайту"/>
+          <button class="search-button">Найти</button>
         </form>
         <a class="login-user" href="profile.html">Валентин Петухов</a>
         <a class="login-link" href="#">Выйти</a>
@@ -46,8 +47,10 @@
         <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость</legend>
-              <label class="visually-hidden" for="price">Стоимость</label>
-              <input id="price" type="range" name="price" min="0" max="9000" step="500" value="5000">
+            <div class="price-range">
+              <span>от 0</span>
+              <span>до 5000</span>
+            </div>
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
@@ -99,8 +102,8 @@
           <li><a href="#">По популярности</a></li>
         </ul>
         <ul class="sort">
-          <li class="arrow arrow-low"><button>По возрастанию</button></li>
-          <li class="arrow arrow-high"><button>По убыванию</button></li>
+          <li class="arrow arrow-low"><a>По возрастанию</a></li>
+          <li class="arrow arrow-high"><a href="#">По убыванию</a></li>
         </ul>
         <ul class="catalog-list">
           <li class="catalog-item">
