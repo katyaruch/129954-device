@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  src: url("..fonts/gilroyextrabold.woff") format(woff),
+      url("..fonts/gilroyextrabold.woff2") format(woff2);
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  src: url("..fonts/gilroylight.woff") format(woff),
+        url("..fonts/gilroylight.woff2") format(woff2)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: #333333;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: rgb(255, 204, 51, 0.5);
+}
+
+.main-header-logo {
+  font-family: "Gilroy";
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 48px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main-header-logo:hover {
+  opacity: 0.6;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+
+.main-navigation a {
+  font-weight: 800;
+  color: #000000;
+}
+
+.search-form input {
+  border: 0;
+
+  background-color: transparent;
+  color: #000000;
+}
+
+.search-form input:hover::placeholder,
+.main-navigation a:hover {
+  color: rgb(0, 0, 0, 0.6);
+}
+
+/*в таком порядке потому что a:active 
+не срабатывает если описать ее до a:hover*/
+
+.search-form input::placeholder,
+.main-navigation a:active {
+  color: rgb(0, 0, 0, 0.3);
+}
+
+
+.search-form input:focus::placeholder {
+  color: rgb(0, 0, 0, 1);
+}
+
+.search-button {
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.search-button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.search-button:active {
+  color: rgb(255, 255, 255, 0.3);
+  background-color: #000000;
+}
+
+.site-navigation,
+.site-navigation ul {
+  list-style: none;
+}
+
+.site-navigation > li > a {
+  font-family: "Gilroy";
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.drop-down-menu {
+  line-height: 36px;
+}

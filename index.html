@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -10,7 +12,7 @@
       <nav class="main-navigation">
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="search">Поиск по сайту</label>
-          <input class="search" id="search" type="text" name="search" placeholder="Поиск по сайту"/>
+          <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту"/>
           <button class="search-button">Найти</button>
         </form>
         <a class="login-link" href="login.html">Войти</a>
@@ -19,7 +21,7 @@
         <ul class="site-navigation">
           <li>
             <a href="#">Каталог товаров</a>
-            <ul>
+            <ul class="drop-down-menu">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="catalog.html">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
@@ -94,11 +96,11 @@
             </table>
           </li>
         </ul>
-        <p class="promo-nav">
-          <a>1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-        </p>
+        <ul class="promo-nav">
+          <button class="button promo-btn">1</button>
+          <button class="button promo-btn">2</button>
+          <button class="button promo-btn">3</button>
+        </ul>
       </section>
       <section class="category">
         <h2 class="visually-hidden">Категории товаров</h2>
@@ -133,9 +135,9 @@
           </li>
         </ul>
       </section>
-      <section class="partners">
-        <h2 class="visually-hidden">Партнеры</h2>
-        <ul class="partners-list">
+      <section class="brands">
+        <h2 class="visually-hidden">Бренды</h2>
+        <ul class="brands-list">
           <li><img src="img/logo-1.jpg" alt="DJI"></li>
           <li><img src="img/logo-2.jpg" alt="SP Adgets"></li>
           <li><img src="img/logo-3.jpg" alt="Go Pro"></li>
