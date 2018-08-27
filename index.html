@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <a class="main-header-logo logo">Device</a>
       <nav class="main-navigation">
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
@@ -16,12 +16,12 @@
           <button class="search-button">Найти</button>
         </form>
         <div class="user-navigation">
-          <a class="login-link" href="login.html">Войти</a>
-          <a href="#">Сравнить</a>
-          <a href="#">Корзина</a>
+          <a class="user-navigation-link login-link" href="login.html">Войти</a>
+          <a class="user-navigation-link" href="#">Сравнить</a>
+          <a class="user-navigation-link" href="#">Корзина</a>
         </div>
         <ul class="site-navigation">
-          <li>
+          <li class="site-navigation-catalog">
             <a class="site-navigation-link" href="#">Каталог товаров</a>
             <ul class="drop-down-menu">
               <li><a href="#">Виртуальная реальность</a></li>
@@ -32,9 +32,9 @@
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li><a class="site-navigation-link" href="delivery.html">Доставка</a></li>
+          <li class="site-navigation-delivery"><a class="site-navigation-link" href="delivery.html">Доставка</a></li>
           <li><a class="site-navigation-link" href="garant.html">Гарантия</a></li>
-          <li><a class="site-navigation-link" href="contact.html">Контакты</a></li>
+          <li class="site-navigation-contacts"><a class="site-navigation-link" href="contact.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
