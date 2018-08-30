@@ -63,9 +63,6 @@ a {
   margin: -1px;
 }
 
-.main-header {
-}
-
 .logo {
   font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 48px;
@@ -106,6 +103,7 @@ a {
 }
 
 .search-form {
+  display: flex;
   width: 440px;
 
   margin-right: 100px;
@@ -135,6 +133,7 @@ a {
 }
 
 .search-button {
+  margin-left: auto;
   font: inherit;
 
   background-color: transparent;
@@ -171,9 +170,6 @@ a {
   margin-left: 0;
 }
 
-.compare-link {
-}
-
 a.logout-link {
   margin-left: 19px;
   margin-right: 17px;
@@ -200,9 +196,7 @@ a.logout-link {
   text-transform: uppercase;
 }
 
-.site-navigation-catalog {  
-  /*width: 540px;*/
-
+.site-navigation-catalog {
   margin-right: 320px;
 }
 
@@ -496,7 +490,6 @@ a.logout-link {
 
 .footer-social {
   display: flex;
-  /*margin: 0 auto;*/
 }
 
 .social-button:active {
@@ -552,7 +545,7 @@ a.logout-link {
   background-color: transparent;
 }
 
-.page-title{
+.page-title {
   padding-left: 60px;
 
   font-family: "Gilroy", "Verdana", sans-serif;
@@ -603,11 +596,12 @@ a.logout-link {
 }
 
 .filters {
-  /*box-sizing: border-box;*/
   width: 200px;
   padding: 0 70px 0 60px;
+}
 
-  /*background-color: #efefef;*/
+.filters .button {
+  width: 200px;
 }
 
 .filters-form fieldset {
@@ -670,7 +664,7 @@ h3.filters,
 }
 
 .sort-type a{
-  margin-right: 30px;
+  margin-right: 32px;
 }
 
 .sort-order {
@@ -678,8 +672,6 @@ h3.filters,
 }
 
 .sort a {
-  /*padding: 0 15px;*/
-
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0;
@@ -694,6 +686,12 @@ a.sort-current,
 a.sort-current:hover,
 .sort a:active {
   color: #000000;
+}
+
+.button-cart {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
 }
 
 .button-compare {
@@ -736,6 +734,10 @@ a.sort-current:hover,
   margin-bottom: 20px;
 }
 
+.catalog-item-hover {
+  text-align: center;
+}
+
 .catalog-item .catalog-item-name {
   font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 18px;
@@ -757,6 +759,7 @@ a.sort-current:hover,
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 77px;
 
   background-color: rgb(0, 0, 0, 0.08);
 }
@@ -802,12 +805,16 @@ a.sort-current:hover,
   background-image: linear-gradient(to right, #dbdbdb, #dbdbdb 50%, #ebebeb 50%, #ebebeb);
 }
 
-.wrapper-filter {
+.wrapper-catalog {
   width: 100%;
   background-image: linear-gradient(to right, #ebebeb, #ebebeb 50%, #fff 50%, #fff);
 }
 
-.flex {
+.wrapper-catalog .columns {
+  margin-bottom: 0;
+}
+
+.top-catalog {
   display: flex;
   align-items: center;
 }
