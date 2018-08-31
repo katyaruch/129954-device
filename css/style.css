@@ -732,8 +732,7 @@ a.sort-current:hover,
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  align-content: stretch;
-  align-items: stretch;
+  justify-content: space-between;
 
   margin: 0;
   padding: 0;
@@ -744,12 +743,13 @@ a.sort-current:hover,
 }
 
 .catalog-item {
-  margin-bottom: 20px;
-  margin-right: 40px;
+  width: 360px;
 }
 
-.catalog-item:nth-child(2n) {
-  margin-right: 0;
+.catalog-name-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .catalog-item-hover {
@@ -757,9 +757,6 @@ a.sort-current:hover,
 }
 
 .catalog-item-name {
-  display: block;
-  width: 254px;
-
   font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -767,6 +764,10 @@ a.sort-current:hover,
   letter-spacing: 0.18px;
   color: #000000;
   text-transform: none;
+}
+
+.item-pro {
+  padding-right: 60px;
 }
 
 .catalog-item-price {
