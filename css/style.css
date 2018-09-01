@@ -49,6 +49,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -57,10 +62,12 @@ a {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+
+  clip: rect(0 0 0 0);
 }
 
 .hidden {
@@ -97,27 +104,46 @@ a {
   display: flex;
   flex-wrap: wrap;
 
-  padding: 43px 60px 42px;
+  padding: 33px 60px 21px;
 
   background-color: rgb(255, 204, 51, 0.5);
 }
 
 .main-navigation a {
+  display: block;
+
   color: #000000;
 }
 
 .search-form {
-  display: flex;
-  width: 440px;
+  position: relative;
 
-  margin-right: 100px;
+  display: flex;
+  width: 400px;
+
+  padding-left: 38px;
+  margin-right: 102px;
+}
+
+.search-form::before {
+  content: "";
+
+  position: absolute;
+  top: 17px;
+  left: 3px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .search {
-  border: 0;
-
   background-color: transparent;
   color: #000000;
+  border: 0;
 }
 
 .search:hover::placeholder,
@@ -138,6 +164,8 @@ a {
 
 .search-button {
   margin-left: auto;
+  padding: 8px 19px;
+
   font: inherit;
 
   background-color: transparent;
@@ -157,18 +185,67 @@ a {
 .user-navigation {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 
   width: 500px;
 }
 
 .user-link {
-  margin-left: 65px;
+  position: relative;
+  margin-left: 35px;
+  padding: 10px 0 10px 30px;
+}
+
+.user-link::before {
+  content: "";
+
+  position: absolute;
+  top: 19px;
+  left: 3px;
+
+  width: 16px;
+  height: 16px;
+}
+
+.login-link::before {
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.compare-link::before {
+  left: 12px;
+
+  background-image: url("../img/compare.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.cart-link::before {
+  left: 8px;
+  background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-link:hover::before,
+.user-link:focus::before {
+  opacity: 0.8;
+}
+
+.login-link:hover::before {
+  opacity: 0.6;
+}
+
+.user-link:active::before {
+  opacity: 0.3;
 }
 
 .login-link {
   margin-left: 0;
   margin-right: 170px;
 }
+
 
 .profile-link {
   margin-left: 0;
@@ -187,6 +264,7 @@ a.logout-link {
 
   margin: 0;
   padding: 0;
+  margin-top: 29px;
 
   list-style: none;
 }
@@ -201,6 +279,7 @@ a.logout-link {
 }
 
 .site-navigation-catalog {
+  width: 220px;
   margin-right: 320px;
 }
 
@@ -220,7 +299,7 @@ a.logout-link {
   max-height: 130px;
   margin: 0;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 34px;
 
   list-style: none;
   line-height: 36px;
@@ -271,14 +350,29 @@ a.logout-link {
 .promo-item-title,
 .services-title,
 .title {
+  margin: 0;
+
   font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 47px;
   line-height: 56px;
+  letter-spacing: 0.47px;
   color: #000000;
+}
+
+.promo-item-title {
+  padding-top: 84px;
+  margin-bottom: 20px;
+}
+
+.promo-item-info p {
+  margin: 0;
+  padding-right: 15px;
+  margin-bottom: 43px;
 }
 
 .button {
   display: inline-block;
+  padding: 8px 0;
 
   text-align: center;
 }
@@ -302,6 +396,7 @@ a.logout-link {
 
 .promo .button {
   width: 220px;
+  margin-bottom: 50px;
 }
 
 .promo-item-property .property-value {
