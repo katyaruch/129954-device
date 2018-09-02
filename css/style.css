@@ -418,10 +418,68 @@ a.logout-link {
 .category-list {
   display: flex;
   justify-content: space-between;
+
+  margin-bottom: 84px;
 }
 
 .category-list li {
   width: 160px;
+}
+
+.category-item {
+  position: relative;
+
+  display: block;
+  padding-top: 193px;
+}
+
+.category-item-2 {
+  padding-right: 40px;
+}
+
+.category-item::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 160px;
+  height: 160px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(240, 197, 46, 0.5);
+}
+
+.category-item-1::before {
+  background-image: url("../img/popular-1.svg");
+  background-position: 31px 52px;
+}
+
+.category-item-2::before {
+  background-image: url("../img/popular-2.svg");
+  background-position: 38px 41px;
+}
+
+.category-item-3::before {
+  background-image: url("../img/popular-3.svg");
+  background-position: 49px 38px;
+}
+
+.category-item-4::before {
+  background-image: url("../img/popular-4.svg");
+  background-position: 28px 50px;
+}
+
+.category-item-5::before {
+  background-image: url("../img/popular-5.svg");
+  background-position: 55px 32px;
+}
+
+.category-item-6::before {
+  background-image: url("../img/popular-6.svg");
+  background-position: 13px 49px;
 }
 
 .category-item,
@@ -429,7 +487,7 @@ a.logout-link {
   font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0.18;
+  letter-spacing: 0.18px;
   font-weight: 800;
   color: #000000;
 }
