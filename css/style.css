@@ -407,6 +407,7 @@ a.logout-link {
   padding: 8px 0;
 
   text-align: center;
+  background-image: linear-gradient(to bottom, transparent, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%, transparent)
 }
 
 .button,
@@ -424,7 +425,7 @@ a.logout-link {
 
 .button:hover {
   color: #000000;
-  background-color: #ffcc33;
+  background-color: #f0c52e;
 }
 
 .button:active {
@@ -564,16 +565,21 @@ a.logout-link {
   margin-bottom: 25px;
 }
 
-.button-service:active {
-  color: #f7e184;
-  background-color: #000000;
-}
-
 .button-service-current,
 .button-service-current:hover {
   padding-right: 118px;
   color: #f7e184;
   background-color: #000000;
+  background-image: none;
+
+}
+
+.button-service:active {
+  padding-right: 118px;
+  
+  color: #f7e184;
+  background-color: #000000;
+  background-image: none;
 }
 
 .services-list {
