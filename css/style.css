@@ -107,7 +107,7 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  padding: 33px 60px 47px;
+  padding: 33px 60px 48px;
 
   background-color: #f7e296;
 }
@@ -451,7 +451,6 @@ a.logout-link {
 .promo-item {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 
   margin-bottom: 100px;
 }
@@ -487,7 +486,7 @@ a.logout-link {
 .promo-item-title {
   position: relative;
 
-  padding-top: 70px;
+  padding-top: 80px;
   margin-bottom: 20px;
   z-index: 1;
 }
@@ -496,7 +495,7 @@ a.logout-link {
   content: "";
 
   position: absolute;
-  top: 29px;
+  top: 40px;
 
   width: 100px;
   height: 7px;
@@ -505,7 +504,7 @@ a.logout-link {
 
 .promo-item-info::after {
   position: absolute;
-  top: -23px;
+  top: -12px;
   right: -7px;
 
   font-family: "Gilroy", "Verdana", sans-serif;
@@ -566,7 +565,7 @@ a.logout-link {
 
 .promo .button {
   width: 220px;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 
 .promo-item-property .property-value {
