@@ -12,8 +12,8 @@
       <nav class="main-navigation">
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="search">Поиск по сайту</label>
-          <input class="search" id="search" type="search" name="search" placeholder="Поиск по сайту"/>
-          <button class="search-button">Найти</button>
+          <input class="search" id="search" type="text" name="search" placeholder="Поиск по сайту"/>
+          <button class="search-button" type="submit">Найти</button>
         </form>
         <div class="user-navigation">
           <a class="user-link login-link" href="login.html">Войти</a>
@@ -42,72 +42,77 @@
       <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
       <section class="promo container">
         <h2 class="visually-hidden">Популярные товары</h2>
-        <ul class="promo-list">
-          <li class="promo-item">
-            <p class="promo-item-image">
-              <img src="img/product-promo-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
-            </p>
-            <div class="promo-item-info">
-              <h3 class="promo-item-title">Делай селфи,<br>как Бен Стиллер!</h3>
-              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a class="button" href="catalog-item1.html">Подробнее</a>
-              <table class="promo-item-property">
-                <tr>
-                  <th class="property-name">Длина палки</th>
-                  <th class="property-name">Вес палки</th>
-                  <th class="property-name">Материал</th>
-                </tr>
-                <tr>
-                  <td class="property-value">8,5 м</td>
-                  <td class="property-value">5 кг</td>
-                  <td class="property-value">Карбон</td>
-                </tr>
-              </table>
-            </div>
-          </li>
-          <li class="promo-item visually-hidden">
-            <p class="promo-item-image">
-              <img src="img/product-promo-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
-            </p>
-            <div class="promo-item-info">
-              <h3 class="promo-item-title">Худеем правильно!</h3>
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a class="button" href="catalog-item2.html">Подробнее</a>
-              <table class="promo-item-property">
-                <tr>
-                  <th class="property-name">Без подзарядки</th>
-                </tr>
-                <tr>
-                  <td class="property-value">48 часов</td>
-                </tr>
-              </table>
-            </div>
-          </li>
-          <li class="promo-item visually-hidden">
-            <p class="promo-item-image">
-              <img src="img/product-promo-3.png" width="526" height="334" alt="Квадрокоптер">
-            </p>
-            <div class="promo-item-info">
-              <h3 class="promo-item-title">Порхает как бабочка, жалит как пчела!</h3>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <a class="button" href="catalog-item3.html">Подробнее</a>
-              <table class="promo-item-property">
-                <tr>
-                  <th class="property-name">Дальность полета</th>
-                  <th class="property-name">Радиус поражения</th>
-                </tr>
-                <tr>
-                  <td class="property-value">800 м</td>
-                  <td class="property-value">50 м</td>
-                </tr>
-              </table>
-            </div>
-          </li>
-        </ul>
-        <div class="promo-nav">
-          <button class="promo-btn">1</button>
-          <button class="promo-btn">2</button>
-          <button class="promo-btn">3</button>
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="promo-inner">
+          <ul class="promo-list">
+            <li class="promo-item">
+              <p class="promo-item-image">
+                <img src="img/product-promo-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
+              </p>
+              <div class="promo-item-info">
+                <h3 class="promo-item-title">Делай селфи,<br>как Бен Стиллер!</h3>
+                <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <a class="button" href="catalog-item1.html">Подробнее</a>
+                <table class="promo-item-property">
+                  <tr>
+                    <th class="property-name">Длина палки</th>
+                    <th class="property-name">Вес палки</th>
+                    <th class="property-name">Материал</th>
+                  </tr>
+                  <tr>
+                    <td class="property-value">8,5 м</td>
+                    <td class="property-value">5 кг</td>
+                    <td class="property-value">Карбон</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li class="promo-item">
+              <p class="promo-item-image">
+                <img src="img/product-promo-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
+              </p>
+              <div class="promo-item-info">
+                <h3 class="promo-item-title">Худеем<br>правильно!</h3>
+                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <a class="button" href="catalog-item2.html">Подробнее</a>
+                <table class="promo-item-property">
+                  <tr>
+                    <th class="property-name">Без подзарядки</th>
+                  </tr>
+                  <tr>
+                    <td class="property-value">48 часов</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li class="promo-item">
+              <p class="promo-item-image">
+                <img src="img/product-promo-3.png" width="526" height="334" alt="Квадрокоптер">
+              </p>
+              <div class="promo-item-info">
+                <h3 class="promo-item-title">Порхает как бабочка, жалит как пчела!</h3>
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                <a class="button" href="catalog-item3.html">Подробнее</a>
+                <table class="promo-item-property">
+                  <tr>
+                    <th class="property-name">Дальность полета</th>
+                    <th class="property-name">Радиус поражения</th>
+                  </tr>
+                  <tr>
+                    <td class="property-value">800 м</td>
+                    <td class="property-value">50 м</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="promo-controls">
+            <label class="promo-btn" for="btn-1"></label>
+            <label class="promo-btn" for="btn-2"></label>
+            <label class="promo-btn" for="btn-3"></label>
         </div>
       </section>
       <section class="category container">
@@ -124,25 +129,30 @@
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <div class="container">
+          <input type="radio" id="button-service-1" name="toggle" checked>
+          <input type="radio" id="button-service-2" name="toggle">
+          <input type="radio" id="button-service-3" name="toggle">
           <ul class="services-nav">
-            <li><a class="button button-service button-service-current">Доставка</a></li>
-            <li><a class="button button-service" href="#">Гарантия</a></li>
-            <li><a class="button button-service" href="#">Кредит</a></li>
+            <li><label class="button button-service" for="button-service-1">Доставка</label></li>
+            <li><label class="button button-service" for="button-service-2">Гарантия</label></li>
+            <li><label class="button button-service" for="button-service-3">Кредит</label></li>
           </ul>
-          <ul class="services-list">
-            <li class="services-item services-item-delivery">
-              <h3 class="services-title">Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            </li>
-            <li class="services-item services-item-garant hidden">
-              <h3 class="services-title">Гарантия</h3>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
-            </li>
-            <li class="services-item services-item-credit hidden">
-              <h3 class="services-title">Кредит</h3>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-            </li>
-          </ul>
+          <div class="services-inner">
+            <ul class="services-list">
+              <li class="services-item services-item-delivery">
+                <h3 class="services-title">Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              </li>
+              <li class="services-item services-item-garant">
+                <h3 class="services-title">Гарантия</h3>
+                <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+              </li>
+              <li class="services-item services-item-credit">
+                <h3 class="services-title">Кредит</h3>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="brands container">
