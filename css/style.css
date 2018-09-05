@@ -214,8 +214,8 @@ img {
 
 .user-link {
   position: relative;
-  margin-left: 40px;
-  padding: 10px 0 10px 25px;
+  margin-left: 38px;
+  padding: 10px 0 10px 26px;
 }
 
 .user-link::before {
@@ -280,7 +280,7 @@ img {
 
 a.logout-link {
   margin-left: 0;
-  margin-right: 17px;
+  margin-right: 19px;
   padding-left: 20px;
 
   color: rgb(0, 0, 0, 0.3);
@@ -339,6 +339,7 @@ a.logout-link {
 
 .site-navigation-contacts {
   margin-left: auto;
+  margin-right: -5px;
 }
 
 .drop-down-menu {
@@ -544,8 +545,18 @@ a.logout-link {
 
 .promo-item-info p {
   margin: 0;
-  padding-right: 15px;
-  margin-bottom: 43px;
+  padding-right: 20px;
+  margin-bottom: 42px;
+
+  letter-spacing: 0.17px;
+}
+
+.promo-item:nth-child(2) .promo-item-text {
+  padding-right: 50px;
+}
+
+.promo-item:nth-child(3) .promo-item-text {
+  padding-right: 30px;
 }
 
 .button {
@@ -553,7 +564,9 @@ a.logout-link {
   padding: 8px 0;
 
   text-align: center;
-  background-image: linear-gradient(to bottom, transparent, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%, transparent)
+  background-image: linear-gradient(to bottom, transparent, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%, transparent);
+
+  cursor: pointer;
 }
 
 .button,
@@ -580,11 +593,17 @@ a.logout-link {
 
 .promo .button {
   width: 220px;
-  margin-bottom: 46px;
+  margin-bottom: 48px;
+}
+
+.promo-item-property {
+
+  margin-left: -2px;
 }
 
 .promo-item-property .property-value {
-  padding-bottom: 3px;
+  padding: 0;
+  padding-bottom: 5px;
 
   font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 36px;
@@ -594,11 +613,21 @@ a.logout-link {
 }
 
 .promo-item-property .property-name {
-  padding-right: 71px;
+  padding: 0;
+  padding-right: 78px;
 
   font-size: 13px;
   line-height: 20px;
+  font-weight: 300;
   text-align: left;
+}
+
+.property-name:nth-child(2) {
+  padding-right: 76px;
+}
+
+.promo-item:nth-child(3) .property-name {
+  padding-right: 44px;
 }
 
 .category {
@@ -809,6 +838,11 @@ a.logout-link {
 
 .services p {
   margin: 0;
+  letter-spacing: 0.18px;
+}
+
+.services-item-credit p {
+  padding-right: 35px;
 }
 
 .brands {
@@ -858,6 +892,7 @@ a.logout-link {
   position: relative;
   padding-top: 55px;
   margin-bottom: 43px;
+  margin-left: -2px;
 }
 
 .title::before {
@@ -865,6 +900,7 @@ a.logout-link {
 
   position: absolute;
   top: 3px;
+  left: 2px;
 
   width: 80px;
   height: 7px;
@@ -872,11 +908,17 @@ a.logout-link {
 }
 
 .info {
-  width: 472px;
+  width: 470px;
 }
 
-.info p {
+.info-text{
   margin: 0 0 30px;
+
+  letter-spacing: 0.12px;
+}
+
+.info-text-2 {
+  letter-spacing: -0.15px;
 }
 
 .contact {
@@ -884,18 +926,14 @@ a.logout-link {
 }
 
 .contact p {
-  margin: 0 0 39px;
-}
+  margin: 0 0 39px -2px;
 
-.info p,
-.contatct p,
-.footer-contacts {
-  letter-spacing: 0;
+  letter-spacing: 0.12px;
 }
 
 .info-transport {
-  padding: 35px 0 0 0;
-  margin: 0 0 55px 0;
+  padding: 36px 0 0 0;
+  margin: 0 0 54px 0;
 
   font-family: "Gilroy", "Verdana", sans-serif;
   font-size: 16px;
@@ -938,7 +976,7 @@ a.logout-link {
 }
 
 .main-footer {
-  padding: 60px 0;
+  padding: 60px 0 65px;
   background-color: #333333;
 }
 
@@ -952,7 +990,7 @@ a.logout-link {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .footer-user-navigation a:hover,
@@ -963,6 +1001,7 @@ a.logout-link {
 
 .main-footer-logo {
   position: relative;
+  margin-left: -2px;
 }
 
 .main-footer-logo,
@@ -1001,6 +1040,8 @@ a.logout-link {
 }
 
 .footer-user-navigation .logout-link {
+  margin-right: auto;
+  padding-left: 15px;
   color: rgb(255, 255, 255, 0.3);
 }
 
@@ -1031,12 +1072,18 @@ a.logout-link {
 
 .footer-contacts {
   width: 260px;
-
   margin: 0;
+
+  letter-spacing: 0;
 }
 
 .footer-contacts-tel {
   text-align: right;
+}
+
+.footer-nav {
+  line-height: 24px;
+  padding-left: 2px;
 }
 
 .footer-nav a {
@@ -1057,8 +1104,9 @@ a.logout-link {
 .main-footer-mid {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 
-  margin-bottom: 60px;
+  margin-bottom: 63px;
 }
 
 .main-footer-bottom {
@@ -1189,7 +1237,7 @@ a.logout-link {
   font-size: 47px;
   line-height: 48px;
   font-weight: 800px;
-  letter-spacing: 0.47px;
+  letter-spacing: 0.6px;
   color: #000000;
 }
 
@@ -1244,7 +1292,7 @@ a.logout-link {
 
 .filters {
   width: 200px;
-  padding: 0 70px 0 60px;
+  padding: 0 70px 0 59px;
 }
 
 .filters .button {
@@ -1268,7 +1316,7 @@ h3.filters,
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
-  letter-spacing: 3.2px;
+  letter-spacing: 3.6px;
   text-transform: uppercase;
   color: #000000;
 }
@@ -1276,6 +1324,10 @@ h3.filters,
 .filters fieldset {
   border: none;
   margin-bottom: 32px;
+}
+
+.filters fieldset:nth-child(2) {
+  margin-bottom: 31px;
 }
 
 .filters legend {
@@ -1410,7 +1462,7 @@ h3.filters,
 }
 
 .container-sort h3 {
-  margin-right: 52px;
+  margin-right: 50px;
 }
 
 .sort {
@@ -1421,7 +1473,7 @@ h3.filters,
 }
 
 .sort-type a {
-  margin-right: 31px;
+  margin-right: 30px;
 }
 
 .sort-order {
@@ -1507,7 +1559,7 @@ a.sort-current:hover,
   width: 760px;
   padding-left: 70px;
   padding-top: 70px;
-  padding-bottom: 77px;
+  padding-bottom: 76px;
 
   background-color: #ffffff;
 }
@@ -1528,8 +1580,33 @@ a.sort-current:hover,
 }
 
 .catalog-item {
+  position: relative;
+
   width: 360px;
   padding-bottom: 47px;
+}
+
+.new {
+  display: block;
+  position: absolute;
+  top: 28px;
+  right: 27px;
+
+  width: 56px;
+  height: 39px;
+  padding: 17px 0 0 0px;
+
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0, 0.1);
+
+  font-family: "Gilroy", "Verdana", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  color: rgb(0, 0, 0, 0.2);
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .catalog-item p {
@@ -1541,7 +1618,7 @@ a.sort-current:hover,
   justify-content: space-between;
   align-items: baseline;
 
-  padding-top: 22px;
+  padding-top: 23px;
 }
 
 .catalog-item-hover {
@@ -1555,10 +1632,11 @@ a.sort-current:hover,
   text-align: center;
   background-color: rgb(238, 238, 238, 0.7);
   opacity: 0;
+  cursor: pointer;
 }
 
 .catalog-item-hover .button {
-  margin-top: 170px;
+  margin-top: 171px;
 }
 
 .catalog-item-hover:hover {
@@ -1609,7 +1687,7 @@ a.sort-current:hover,
 }
 
 .pagination-item {
-  padding: 14px;
+  padding: 0 13px 0 14px;
 
   color: rgb(0, 0, 0, 0.3);
 }
@@ -1625,7 +1703,7 @@ a.sort-current:hover,
 }
 
 .pagination-btn {
-  padding: 25px 30px 22px;
+  padding: 24px 26px 22px 30px;
 }
 
 .pagination-btn:hover {
