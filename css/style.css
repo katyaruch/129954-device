@@ -114,8 +114,6 @@ img {
 }
 
 .main-navigation a {
-  display: inline-block;
-
   color: #000000;
 }
 
@@ -320,7 +318,6 @@ a.logout-link {
   left: 230px;
   top: 6px;
 
-  display: inline-block;
   width: 16px;
   height: 16px;
 
@@ -384,7 +381,7 @@ a.logout-link {
 .promo-controls {
   position: absolute;
   right: 85px;
-  top: 320px;
+  top: 315px;
 }
 
 .promo-controls label {
@@ -394,6 +391,7 @@ a.logout-link {
   width: 10px;
   height: 10px;
   margin-right: 17px;
+  vertical-align: middle;
 
   cursor: pointer;
   border: 1px solid #000000;
@@ -564,6 +562,7 @@ a.logout-link {
   padding: 8px 0;
 
   text-align: center;
+  vertical-align: middle;
   background-image: linear-gradient(to bottom, transparent, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%, transparent);
 
   cursor: pointer;
@@ -976,14 +975,12 @@ a.logout-link {
 }
 
 .main-footer {
-  padding: 60px 0 65px;
-  background-color: #333333;
-}
-
-.main-footer .container {/*
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;*/
+  flex-wrap: wrap;
+  padding: 60px 0 65px;
+
+  background-color: #333333;
 }
 
 .main-footer-top {
@@ -1174,8 +1171,6 @@ a.logout-link {
 }
 
 .copyright-button {
-  display: inline-block;
-
   width: 27px;
   height: 35px;
 
@@ -1185,8 +1180,56 @@ a.logout-link {
   background-repeat: no-repeat;
 }
 
+.modal {
+  position: fixed;
+
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px 0px rgb(0, 0, 0, 0.2);
+}
+
+.modal-write-us {
+  top: 50%;
+  left: 50%;
+
+  width: 760px;
+  margin-left: -480px;
+  margin-top: -278px;
+  padding: 95px 100px;
+}
+
+.write {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.write-field {
+  width: 360px;
+
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.write-textarea {
+  width: 760px;
+}
+
+.write-field label {
+  display: block;
+
+  margin-bottom: 7px;
+}
+
+.write textarea {
+  height: 156px;
+}
+
 .write input,
 .write textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 17px;
+
   font-size: 14px;
   line-height: 18px;
   color: rgb(51, 51, 51, 0.4) ;
@@ -1210,23 +1253,71 @@ a.logout-link {
 
 .write input:invalid,
 .write textarea:invalid {
-  color: rgb(51, 51, 51, 0.4);
   background-color: rgb(237, 181, 181, 0.5);
 }
 
+.write .button {
+  width: 200px;
+}
+
 .modal-close {
-  color: rgb(255, 204, 51, 0.5);
-  background-color: transparent;
+  position: absolute;
+
+  top: 23px;
+  right: 22px;
+
+  width: 55px;
+  height: 55px;
+
+  font-size: 0;
+  background-color: rgb(240, 197, 46, 0.5);
+  border: 0;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 26px;
+  left: 13px;
+
+
+  width: 30px;
+  height: 3px;
+
+  background-color: #ffffff;
 }
 
 .modal-close:hover {
-  color: rgb(255, 204, 51, 1);
-  background-color: transparent;
+  background-color: rgb(240, 197, 46, 1);
 }
 
 .modal-close:active {
-  color: rgb(255, 204, 51, 0.3);
-  background-color: transparent;
+  background-color: rgb(240, 197, 46, 0.3);
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-map {
+  top: 50%;
+  left: 50%;
+
+  margin-left: -480px;
+  margin-top: -280px;
+}
+
+.modal-map iframe {
+  border: 0;
 }
 
 .page-title {
@@ -1448,8 +1539,15 @@ h3.filters,
   border-radius: 50%;
 }
 
+.filter-input:disabled + label::before,
+.filter-input:disabled + label::after,
 .filter-input:disabled + label {
-  color: #999999;
+  opacity: 0.25;
+}
+
+.filter-input:hover + label::before,
+.filter-input:hover + label::after {
+  opacity: 0.4;
 }
 
 .container-sort {
