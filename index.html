@@ -42,78 +42,76 @@
       <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
       <section class="promo container">
         <h2 class="visually-hidden">Популярные товары</h2>
-        <input type="radio" id="btn-1" name="promo-slides" checked>
-        <input type="radio" id="btn-2" name="promo-slides">
-        <input type="radio" id="btn-3" name="promo-slides">
-        <div class="promo-inner">
-          <ul class="promo-list">
-            <li class="promo-item">
-              <p class="promo-item-image">
-                <img src="img/product-promo-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
-              </p>
-              <div class="promo-item-info">
-                <h3 class="promo-item-title">Делай селфи,<br>как Бен Стиллер!</h3>
-                <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                <a class="button" href="catalog-item1.html">Подробнее</a>
-                <table class="promo-item-property">
-                  <tr>
-                    <td class="property-value">8,5 м</td>
-                    <td class="property-value">5 кг</td>
-                    <td class="property-value">Карбон</td>
-                  </tr>
-                  <tr>
-                    <th class="property-name">Длина палки</th>
-                    <th class="property-name">Вес палки</th>
-                    <th class="property-name">Материал</th>
-                  </tr>
-                </table>
-              </div>
-            </li>
-            <li class="promo-item">
-              <p class="promo-item-image">
-                <img src="img/product-promo-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
-              </p>
-              <div class="promo-item-info">
-                <h3 class="promo-item-title">Худеем<br>правильно!</h3>
-                <p class="promo-item-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <a class="button" href="catalog-item2.html">Подробнее</a>
-                <table class="promo-item-property">
-                  <tr>
-                    <td class="property-value">48 часов</td>
-                  </tr>
-                  <tr>
-                    <th class="property-name">Без подзарядки</th>
-                  </tr>
-                </table>
-              </div>
-            </li>
-            <li class="promo-item">
-              <p class="promo-item-image">
-                <img src="img/product-promo-3.png" width="526" height="334" alt="Квадрокоптер">
-              </p>
-              <div class="promo-item-info">
-                <h3 class="promo-item-title">Порхает как бабочка, жалит как пчела!</h3>
-                <p class="promo-item-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="button" href="catalog-item3.html">Подробнее</a>
-                <table class="promo-item-property">
-                  <tr>
-                    <td class="property-value">800 м</td>
-                    <td class="property-value">50 м</td>
-                  </tr>
-                  <tr>
-                    <th class="property-name">Дальность полета</th>
-                    <th class="property-name">Радиус поражения</th>
-                  </tr>
-                </table>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <input class="promo-input visually-hidden" type="radio" id="btn-1" name="promo-slides" checked>
+        <input class="promo-input visually-hidden" type="radio" id="btn-2" name="promo-slides">
+        <input class="promo-input visually-hidden" type="radio" id="btn-3" name="promo-slides">
         <div class="promo-controls">
-          <label class="promo-btn" for="btn-1" aria-label="Слайд 1" tabindex="0"></label>
-          <label class="promo-btn" for="btn-2" aria-label="Слайд 2" tabindex="0"></label>
-          <label class="promo-btn" for="btn-3" aria-label="Слайд 3" tabindex="0"></label>
+          <label class="promo-btn promo-btn-1" for="btn-1" aria-label="Слайд 1"></label>
+          <label class="promo-btn promo-btn-2" for="btn-2" aria-label="Слайд 2"></label>
+          <label class="promo-btn promo-btn-3" for="btn-3" aria-label="Слайд 3"></label>
         </div>
+        <ul class="promo-list">
+          <li class="promo-item">
+            <p class="promo-item-image">
+              <img src="img/product-promo-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
+            </p>
+            <div class="promo-item-info">
+              <h3 class="promo-item-title">Делай селфи,<br>как Бен Стиллер!</h3>
+              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a class="button" href="catalog-item1.html">Подробнее</a>
+              <table class="promo-item-property">
+                <tr>
+                  <td class="property-value">8,5 м</td>
+                  <td class="property-value">5 кг</td>
+                  <td class="property-value">Карбон</td>
+                </tr>
+                <tr>
+                  <th class="property-name">Длина палки</th>
+                  <th class="property-name">Вес палки</th>
+                  <th class="property-name">Материал</th>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="promo-item">
+            <p class="promo-item-image">
+              <img src="img/product-promo-2.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
+            </p>
+            <div class="promo-item-info">
+              <h3 class="promo-item-title">Худеем<br>правильно!</h3>
+              <p class="promo-item-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="button" href="catalog-item2.html">Подробнее</a>
+              <table class="promo-item-property">
+                <tr>
+                  <td class="property-value">48 часов</td>
+                </tr>
+                <tr>
+                  <th class="property-name">Без подзарядки</th>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="promo-item">
+            <p class="promo-item-image">
+              <img src="img/product-promo-3.png" width="526" height="334" alt="Квадрокоптер">
+            </p>
+            <div class="promo-item-info">
+              <h3 class="promo-item-title">Порхает как бабочка, жалит как пчела!</h3>
+              <p class="promo-item-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="button" href="catalog-item3.html">Подробнее</a>
+              <table class="promo-item-property">
+                <tr>
+                  <td class="property-value">800 м</td>
+                  <td class="property-value">50 м</td>
+                </tr>
+                <tr>
+                  <th class="property-name">Дальность полета</th>
+                  <th class="property-name">Радиус поражения</th>
+                </tr>
+              </table>
+            </div>
+          </li>
+        </ul>
       </section>
       <section class="category container">
         <h2 class="visually-hidden">Категории товаров</h2>
@@ -129,13 +127,13 @@
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <div class="container">
-          <input type="radio" id="button-service-1" name="services-slides" checked>
-          <input type="radio" id="button-service-2" name="services-slides">
-          <input type="radio" id="button-service-3" name="services-slides">
+          <input class="services-input visually-hidden" type="radio" id="button-service-1" name="services-slides" checked>
+          <input class="services-input visually-hidden" type="radio" id="button-service-2" name="services-slides">
+          <input class="services-input visually-hidden" type="radio" id="button-service-3" name="services-slides">
           <ul class="services-nav">
-            <li><label class="button button-service" for="button-service-1" tabindex="0">Доставка</label></li>
-            <li><label class="button button-service" for="button-service-2" tabindex="0">Гарантия</label></li>
-            <li><label class="button button-service" for="button-service-3" tabindex="0">Кредит</label></li>
+            <li><label class="button button-service" for="button-service-1">Доставка</label></li>
+            <li><label class="button button-service" for="button-service-2">Гарантия</label></li>
+            <li><label class="button button-service" for="button-service-3">Кредит</label></li>
           </ul>
           <div class="services-inner">
             <ul class="services-list">

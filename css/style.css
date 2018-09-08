@@ -447,66 +447,39 @@ img {
   position: relative;
 }
 
-.promo input[type=radio],
-.services input[type=radio] {
-    display: none;
-}
-
 .promo-controls {
   position: absolute;
   right: 85px;
-  top: 315px;
+  bottom: 245px;
+  z-index: 100;
 }
 
-.promo-controls label {
+.promo-controls .promo-btn {
   position: relative;
 
   display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.promo-controls .promo-btn::after{
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
   width: 10px;
   height: 10px;
   margin-right: 17px;
   vertical-align: middle;
 
-  cursor: pointer;
   border: 1px solid #000000;
   border-radius: 50%;
-}
-
-#btn-1:checked ~ .promo-controls label[for="btn-1"]::before,
-#btn-2:checked ~ .promo-controls label[for="btn-2"]::before,
-#btn-3:checked ~ .promo-controls label[for="btn-3"]::before {
-  content: "";
-
-  position: absolute;
-  top: 2px;
-  left: 2px;
-
-  width: 3px;
-  height: 3px;
-
-  border: 1px solid #000000;
-  border-radius: 50%;
-}
-
-#btn-1:checked ~ .promo-inner .promo-list {
-  -webkit-transform: translate(0);
-      -ms-transform: translate(0);
-       -o-transform: translate(0);
-          transform: translate(0);
-}
-
-#btn-2:checked ~ .promo-inner .promo-list {
-  -webkit-transform: translate(-1160px);
-      -ms-transform: translate(-1160px);
-       -o-transform: translate(-1160px);
-          transform: translate(-1160px);
-}
-
-#btn-3:checked ~ .promo-inner .promo-list {
-  -webkit-transform: translate(-2320px);
-      -ms-transform: translate(-2320px);
-       -o-transform: translate(-2320px);
-          transform: translate(-2320px);
 }
 
 .promo-inner {
@@ -521,7 +494,6 @@ img {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  width: 300%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f7e296), color-stop(19%, #f7e296), color-stop(19%, transparent), to(transparent));
   background-image: -webkit-linear-gradient(top, #f7e296, #f7e296 19%, transparent 19%, transparent);
   background-image: -o-linear-gradient(top, #f7e296, #f7e296 19%, transparent 19%, transparent);
@@ -541,15 +513,37 @@ img {
 }
 
 .promo-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 
   margin-bottom: 98px;
+}
+
+#btn-1:checked ~ .promo-list .promo-item:nth-child(1),
+#btn-2:checked ~ .promo-list .promo-item:nth-child(2),
+#btn-3:checked ~ .promo-list .promo-item:nth-child(3) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#btn-1:checked ~ .promo-controls .promo-btn-1::before,
+#btn-2:checked ~ .promo-controls .promo-btn-2::before,
+#btn-3:checked ~ .promo-controls .promo-btn-3::before {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  width: 3px;
+  height: 3px;
+
+  border: 1px solid #000000;
+  border-radius: 50%;
 }
 
 .promo-item-image {
@@ -882,7 +876,10 @@ img {
 
 #button-service-1:checked ~ .services-nav label[for="button-service-1"],
 #button-service-2:checked ~ .services-nav label[for="button-service-2"],
-#button-service-3:checked ~ .services-nav label[for="button-service-3"] {
+#button-service-3:checked ~ .services-nav label[for="button-service-3"],
+#button-service-1:focus ~ .services-nav label[for="button-service-1"],
+#button-service-2:focus ~ .services-nav label[for="button-service-2"],
+#button-service-3:focus ~ .services-nav label[for="button-service-3"]  {
   padding-right: 118px;
   
   color: #f7e184;
