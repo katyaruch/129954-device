@@ -449,8 +449,8 @@ img {
 
 .promo-controls {
   position: absolute;
-  right: 85px;
-  bottom: 245px;
+  right: 96px;
+  bottom: 234px;
   z-index: 100;
 }
 
@@ -458,9 +458,9 @@ img {
   position: relative;
 
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
+  width: 12px;
+  height: 12px;
+  padding: 10px 8px;
 
   border-radius: 50%;
   cursor: pointer;
@@ -470,12 +470,11 @@ img {
   content: "";
 
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 10px;
 
   width: 10px;
   height: 10px;
-  margin-right: 17px;
   vertical-align: middle;
 
   border: 1px solid #000000;
@@ -517,7 +516,7 @@ img {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-
+  min-height: 495px;
   margin-bottom: 98px;
 }
 
@@ -536,14 +535,20 @@ img {
   content: "";
 
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 13px;
+  left: 13px;
 
-  width: 3px;
-  height: 3px;
+  width: 4px;
+  height: 4px;
 
   border: 1px solid #000000;
   border-radius: 50%;
+}
+
+#btn-1:focus ~ .promo-controls .promo-btn-1::before,
+#btn-2:focus ~ .promo-controls .promo-btn-2::before,
+#btn-3:focus ~ .promo-controls .promo-btn-3::before {
+  background-color: #000000;
 }
 
 .promo-item-image {
@@ -876,15 +881,18 @@ img {
 
 #button-service-1:checked ~ .services-nav label[for="button-service-1"],
 #button-service-2:checked ~ .services-nav label[for="button-service-2"],
-#button-service-3:checked ~ .services-nav label[for="button-service-3"],
-#button-service-1:focus ~ .services-nav label[for="button-service-1"],
-#button-service-2:focus ~ .services-nav label[for="button-service-2"],
-#button-service-3:focus ~ .services-nav label[for="button-service-3"]  {
+#button-service-3:checked ~ .services-nav label[for="button-service-3"] {
   padding-right: 118px;
   
   color: #f7e184;
   background-color: #000000;
   background-image: none;
+}
+
+#button-service-1:focus ~ .services-nav label[for="button-service-1"],
+#button-service-2:focus ~ .services-nav label[for="button-service-2"],
+#button-service-3:focus ~ .services-nav label[for="button-service-3"] {
+  outline: 2px solid #f0c52e;
 }
 
 .services-inner {
@@ -2099,6 +2107,10 @@ img {
 }
 
 .catalog-item-hover:hover {
+  opacity: 1;
+}
+
+.catalog-item-hover .button:focus {
   opacity: 1;
 }
 
