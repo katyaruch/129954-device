@@ -517,18 +517,18 @@ img {
   margin-bottom: 98px;
 }
 
-#btn-1:checked ~ .promo-list .promo-item:nth-child(1),
-#btn-2:checked ~ .promo-list .promo-item:nth-child(2),
-#btn-3:checked ~ .promo-list .promo-item:nth-child(3) {
+.promo-input-1:checked ~ .promo-list .promo-item:nth-child(1),
+.promo-input-2:checked ~ .promo-list .promo-item:nth-child(2),
+.promo-input-3:checked ~ .promo-list .promo-item:nth-child(3) {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-#btn-1:checked ~ .promo-controls .promo-btn-1::before,
-#btn-2:checked ~ .promo-controls .promo-btn-2::before,
-#btn-3:checked ~ .promo-controls .promo-btn-3::before {
+.promo-input-1:checked ~ .promo-controls .promo-btn-1::before,
+.promo-input-2:checked ~ .promo-controls .promo-btn-2::before,
+.promo-input-3:checked ~ .promo-controls .promo-btn-3::before {
   content: "";
 
   position: absolute;
@@ -542,9 +542,9 @@ img {
   border-radius: 50%;
 }
 
-#btn-1:focus ~ .promo-controls .promo-btn-1::before,
-#btn-2:focus ~ .promo-controls .promo-btn-2::before,
-#btn-3:focus ~ .promo-controls .promo-btn-3::before {
+.promo-input-1:focus ~ .promo-controls .promo-btn-1::before,
+.promo-input-2:focus ~ .promo-controls .promo-btn-2::before,
+.promo-input-3:focus ~ .promo-controls .promo-btn-3::before {
   background-color: #000000;
 }
 
@@ -876,9 +876,9 @@ img {
   margin-bottom: 25px;
 }
 
-#button-service-1:checked ~ .services-nav label[for="button-service-1"],
-#button-service-2:checked ~ .services-nav label[for="button-service-2"],
-#button-service-3:checked ~ .services-nav label[for="button-service-3"] {
+.services-input-1:checked ~ .services-nav label[for="button-service-1"],
+.services-input-2:checked ~ .services-nav label[for="button-service-2"],
+.services-input-3:checked ~ .services-nav label[for="button-service-3"] {
   padding-right: 118px;
   
   color: #f7e184;
@@ -886,9 +886,9 @@ img {
   background-image: none;
 }
 
-#button-service-1:focus ~ .services-nav label[for="button-service-1"],
-#button-service-2:focus ~ .services-nav label[for="button-service-2"],
-#button-service-3:focus ~ .services-nav label[for="button-service-3"] {
+.services-input-1:focus ~ .services-nav label[for="button-service-1"],
+.services-input-2:focus ~ .services-nav label[for="button-service-2"],
+.services-input-3:focus ~ .services-nav label[for="button-service-3"] {
   outline: 2px solid #f0c52e;
 }
 
@@ -914,21 +914,21 @@ img {
   padding-top: 73px;
 }
 
-#button-service-1:checked ~ .services-inner .services-list {
+.services-input-1:checked ~ .services-inner .services-list {
   -webkit-transform: translate(0);
       -ms-transform: translate(0);
        -o-transform: translate(0);
           transform: translate(0);
 }
 
-#button-service-2:checked ~ .services-inner .services-list {
+.services-input-2:checked ~ .services-inner .services-list {
   -webkit-transform: translate(-760px);
       -ms-transform: translate(-760px);
        -o-transform: translate(-760px);
           transform: translate(-760px);
 }
 
-#button-service-3:checked ~ .services-inner .services-list {
+.services-input-3:checked ~ .services-inner .services-list {
   -webkit-transform: translate(-1520px);
       -ms-transform: translate(-1520px);
        -o-transform: translate(-1520px);
@@ -1205,6 +1205,7 @@ img {
 
 .footer-user-navigation .logout-link {
   margin-right: auto;
+  margin-left: 0;
   padding-left: 15px;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1715,10 +1716,6 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 760px;
   padding: 23px 0 23px 73px;
 
@@ -1782,6 +1779,7 @@ img {
   display: block;
   width: 0;
   height: 0;
+  margin: 7px 0 0 18px;
 
   font-size: 0;
 
@@ -1795,7 +1793,7 @@ img {
 }
 
 .arrow-high {
-  margin-left: 18px;
+  /*margin-left: 18px;*/
   border-top: 10px solid #000000;
 }
 
@@ -1857,44 +1855,59 @@ img {
   border-top: 2px solid #000000;
 }
 
-.price-range {
+.price-range {/*
   padding-top: 5px;
   margin-top: 17px;
-  border-top: 2px solid #91c92f;
+  border-top: 2px solid #91c92f;*/
+  display: flex;
 }
 
 .price-range-control {
   position: relative;
 
+  /*display: inline-block;*/
+  padding-top: 9px;
+  margin-top: 17px;
+  margin-bottom: 2px;
+
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.2);
+  border-top: 2px solid #91c92f;
 }
 
 .price-range-control-min {
-  margin-right: 60px;
+  width: 108px;
+  margin-right: -18px;
+  /*margin-right: 60px;*/
+  z-index: 1;
+}
+
+.price-range-control-max {
+  width: 110px;
+  border-color: #dbdbdb;
 }
 
 .price-range-control::before {
   content: "";
 
   position: absolute;
-  top: -22px;
-  left: -6px;
+  top: -12px;
+  left: -5px;
 
   width: 4px;
   height: 4px;
 
   border: 8px solid #ffffff;
   border-radius: 50%;
-  background-color: #dbdbdb;
+  background-color: #ababab;
   -webkit-box-shadow: 0px 2px 0px 0px #dbdbdb;
           box-shadow: 0px 2px 0px 0px #dbdbdb;
   cursor: pointer;
 }
 
 .price-range-control-max::before {
-  left: 17px;
+  left: 18px;
 }
 
 .filters ul {
