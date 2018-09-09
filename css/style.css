@@ -427,7 +427,7 @@ img {
   line-height: 36px;
   background-color: #f7e296;
 
-  z-index: 1;
+  z-index: 2;
 }
 
 .drop-down-menu li {
@@ -594,6 +594,7 @@ img {
 
   padding-top: 80px;
   margin-bottom: 20px;
+  z-index: 1;
 }
 
 .promo-item-title::before {
@@ -1902,6 +1903,18 @@ img {
 
 .price-range-control-max::before {
   left: 18px;
+}
+
+.price-range-control-min:active::before {
+  top:-13px;
+  left: -6px;
+  border-width: 9px;
+}
+
+.price-range-control-max:active::before {
+  top:-13px;
+  left: 17px;
+  border-width: 9px;
 }
 
 .filters ul {
