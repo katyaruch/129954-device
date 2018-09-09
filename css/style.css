@@ -594,7 +594,6 @@ img {
 
   padding-top: 80px;
   margin-bottom: 20px;
-  z-index: 1;
 }
 
 .promo-item-title::before {
@@ -1793,7 +1792,6 @@ img {
 }
 
 .arrow-high {
-  /*margin-left: 18px;*/
   border-top: 10px solid #000000;
 }
 
@@ -1855,17 +1853,13 @@ img {
   border-top: 2px solid #000000;
 }
 
-.price-range {/*
-  padding-top: 5px;
-  margin-top: 17px;
-  border-top: 2px solid #91c92f;*/
+.price-range {
   display: flex;
 }
 
 .price-range-control {
   position: relative;
 
-  /*display: inline-block;*/
   padding-top: 9px;
   margin-top: 17px;
   margin-bottom: 2px;
@@ -1879,7 +1873,6 @@ img {
 .price-range-control-min {
   width: 108px;
   margin-right: -18px;
-  /*margin-right: 60px;*/
   z-index: 1;
 }
 
